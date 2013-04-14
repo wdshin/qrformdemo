@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="imagetoolbar" content="no">
+<meta http-equiv="p3p" content='CP="CAO DSP AND SO " policyref="/w3c/p3p.xml"' />
+<title>QRFORM - DEMO </title>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+
+<script type="text/javascript" src="js/qrform.js"></script>
+</head>
+
+<body>
+
+<form method="post" id="loginform">
+<input type="hidden" name="site" id="site" value="nexon">
+<fieldset>
+<p>
+<label for="writeId" class="label_id">아이디</label>
+<input type="text" name="username" id="username" class="qrform_input inp_id">
+</p>
+<p>
+<label for="writePass" class="label_pass">계좌번호</label>
+<input type="password" name="password" id="password" class="qrform_input inp_pass">
+</p>
+<p>
+<label for="writePass" class="label_pass">계좌이체 비밀번호</label>
+<input type="password" name="password" id="acc_password" class="qrform_input inp_pass">
+</p>
+<div id="output"></div>
+<button class="btn_qr btn_login">로그인</button>
+
+<img id="qrimage"/>
+
+</fieldset>
+</form>
+
+</body>
+
+</html>
